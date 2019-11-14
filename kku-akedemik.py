@@ -16,19 +16,19 @@ class color:
 
 
 def usage():
-    print(color.GREEN+"\n\n\nTwitter: @mehmetserifpasa\nKullanım: python drlv1.py http://example.com\n\r")
+    #print(color.GREEN+"\n\n\nTwitter: @mehmetserifpasa\nKullanım: python drlv1.py\n\r")
 
-s = 2000
+s = 1000
 
 def tara():
     try:
         global s
         s += 1
-        url = "https://kariyer.kku.edu.tr/akademik/default.aspx?sicil=A-" + str(s)
+        url = "https://example/akademik/default.aspx?s=A-" + str(s)
         istek = requests.get(url)
         icerik = istek.content
 
-        if istek.url == "https://kku.edu.tr/Anasayfa":
+        if istek.url == "https://example.com/Anasayfa":
             pass
         else:
             print(color.RED+istek.url)
