@@ -50,5 +50,4 @@ for i in range(1,20000):
     time.sleep(0.05)
 
 
-for c in thread:
-    l = None
+
